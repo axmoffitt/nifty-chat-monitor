@@ -62,8 +62,8 @@ body {
     display: inline;
 }
 .chat-line__message .chat-card__link .chat-card__title span {
-    font-size: 32px !important;
-    line-height: 35px !important;
+    font-size: 12px !important;
+    line-height: 14px !important;
     color: white;
 }
 .chat-line__message .chat-card__link .chat-card__title + div span {
