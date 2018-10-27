@@ -48,8 +48,8 @@ body {
 }
 .chat-line__message, .chat-line__status, .chat-line__subscribe, .user-notice-line {
     padding:3px 1px 3px 6px !important;
-    font-size:20px !important;
-    line-height:22px !important;
+    font-size:1 rem !important;
+    line-height:1.25 rem !important;
     border-bottom:#444 solid 1px !important;
 }
 .chat-line__subscribe span {
@@ -62,13 +62,13 @@ body {
     display: inline;
 }
 .chat-line__message .chat-card__link .chat-card__title span {
-    font-size: 1 rem !important;
-    line-height: 1.25 rem !important;
+    font-size: 12px !important;
+    line-height: 15px rem !important;
     color: white;
 }
 .chat-line__message .chat-card__link .chat-card__title + div span {
-    font-size: 32px !important;
-    line-height: 35px !important;
+    font-size: 12px !important;
+    line-height: 15px !important;
     color: #bbb !important;
 }
 .mention-fragment {
