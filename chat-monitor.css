@@ -2,7 +2,7 @@
 
 body {
     background-color:black !important;
-    font-family: 'verdana', sans-serif !important;
+    font-family: 'Open Sans Condensed', sans-serif !important;
 }
 
 #root .chat-room__header, .chat-list__more-messages-placeholder, .pinned-cheer {
@@ -22,7 +22,7 @@ body {
 .chat-input input[type=password],
 .chat-input input[type=search],
 .chat-input {
-    font-size: .75 rem !important;
+    font-size: 2.4rem !important;
 }
 
 .chat-list .tw-full-height.reverse {
@@ -48,8 +48,8 @@ body {
 }
 .chat-line__message, .chat-line__status, .chat-line__subscribe, .user-notice-line {
     padding:3px 1px 3px 6px !important;
-    font-size: 20px !important;
-    line-height: 22px !important;
+    font-size:32px !important;
+    line-height:35px !important;
     border-bottom:#444 solid 1px !important;
 }
 .chat-line__subscribe span {
@@ -62,13 +62,13 @@ body {
     display: inline;
 }
 .chat-line__message .chat-card__link .chat-card__title span {
-    font-size: 20px !important;
-    line-height: 22px rem !important;
+    font-size: 32px !important;
+    line-height: 35px !important;
     color: white;
 }
 .chat-line__message .chat-card__link .chat-card__title + div span {
-    font-size: 20px !important;
-    line-height: 22px !important;
+    font-size: 32px !important;
+    line-height: 35px !important;
     color: #bbb !important;
 }
 .mention-fragment {
@@ -100,7 +100,7 @@ a {
     color:inherit !important;
 }
 .chat-author__display-name {
-    color:#00B609 !important;
+    color:green !important;
 }
 span[data-a-target='chat-message-text'], img.chat-image {
     color:white !important;
