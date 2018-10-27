@@ -48,8 +48,8 @@ body {
 }
 .chat-line__message, .chat-line__status, .chat-line__subscribe, .user-notice-line {
     padding:3px 1px 3px 6px !important;
-    font-size:32px !important;
-    line-height:35px !important;
+    font-size:1rem  !important;
+    line-height:1.25rem !important;
     border-bottom:#444 solid 1px !important;
 }
 .chat-line__subscribe span {
