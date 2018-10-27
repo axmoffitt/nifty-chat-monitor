@@ -2,7 +2,7 @@
 
 body {
     background-color:black !important;
-    font-family: 'Open Sans Condensed', sans-serif !important;
+    font-family: 'Open Sans', sans-serif !important;
 }
 
 #root .chat-room__header, .chat-list__more-messages-placeholder, .pinned-cheer {
