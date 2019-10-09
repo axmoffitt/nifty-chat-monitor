@@ -2,10 +2,10 @@
 
 body {
     background-color:black !important;
-    font-family: 'Open Sans Condensed', sans-serif !important;
+    font-family: 'noto sans', sans-serif !important;
 }
 
-#root .chat-room__header, .chat-list__more-messages-placeholder, .pinned-cheer, .chat-room__notifications, #root .rooms-header {
+#root .chat-room__header, .chat-list__more-messages-placeholder, .pinned-cheer {
     display:none !important;
 }
 
@@ -22,7 +22,7 @@ body {
 .chat-input input[type=password],
 .chat-input input[type=search],
 .chat-input {
-    font-size: 2.4rem !important;
+    font-size: .75 rem !important;
 }
 
 .chat-list .tw-full-height.reverse {
@@ -46,13 +46,15 @@ body {
 .chat-line__message.odd {
     background-color:#111 !important;
 }
-.chat-list .tw-full-height > .chat-line__message, .chat-line__status, .user-notice-line {
+.chat-line__message, .chat-line__status, .chat-line__subscribe, .user-notice-line {
     padding:3px 1px 3px 6px !important;
-    font-size:32px !important;
-    line-height:35px !important;
+    font-size:12px !important;
+    line-height:13px !important;
     border-bottom:#444 solid 1px !important;
 }
-
+.chat-line__subscribe span {
+    color: white;
+}
 .chat-line__message .chat-card__link {
     background-color: #333 !important;
 }
@@ -60,16 +62,16 @@ body {
     display: inline;
 }
 .chat-line__message .chat-card__link .chat-card__title span {
-    font-size: 32px !important;
-    line-height: 35px !important;
+    font-size: 11px !important;
+    line-height: 13px !important;
     color: white;
 }
 .chat-line__message .chat-card__link .chat-card__title + div span {
-    font-size: 32px !important;
-    line-height: 35px !important;
+    font-size: 11px !important;
+    line-height: 13px !important;
     color: #bbb !important;
 }
-div.mention-fragment {
+.mention-fragment {
     background-color: transparent !important;
     padding: 0;
 }
@@ -98,7 +100,7 @@ a {
     color:inherit !important;
 }
 .chat-author__display-name {
-    color:green !important;
+    color:#00B609 !important;
 }
 span[data-a-target='chat-message-text'], img.chat-image {
     color:white !important;
@@ -111,37 +113,6 @@ span[data-a-target='chat-message-text'], img.chat-image {
 .mentioned {
     color: inherit;
     background-color: inherit;
-}
-
-img.chat-line__message--emote {
-    margin:0;
-    vertical-align:baseline;
-}
-
-/* Clean up subscription messages */
-.tw-c-text-alt-2 {
-    display:none;
-}
-p.tw-c-text-link{
-    display:inline;
-}
-.tw-mg-l-05 .tw-block {
-    display:inline !important;
-}
-p.tw-c-text-link, p.tw-mg-l-05{
-    font-size:32px;
-    line-height:35px;
-}
-div.tw-mg-y-05{
-    margin-bottom:0 !important;
-    margin-top:0 !important;
-}
-div.tw-pd-y-05{
-    padding-bottom:0 !important;
-    padding-top:0 !important;
-}
-div.tw-pd-r-2{
-    padding-right:0 !important;
 }
 
 ::-webkit-scrollbar {
