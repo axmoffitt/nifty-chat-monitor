@@ -2,10 +2,10 @@
 
 body {
     background-color:black !important;
-    font-family: 'Open Sans Condensed', sans-serif !important; // changes font for the whole page. 
+    font-family: 'Open Sans Condensed', sans-serif !important;
 }
 
-#root .chat-room__header, .chat-list__more-messages-placeholder, .pinned-cheer {
+#root .chat-room__header, .chat-list__more-messages-placeholder, .pinned-cheer, .chat-room__notifications, #root .rooms-header {
     display:none !important;
 }
 
@@ -22,7 +22,7 @@ body {
 .chat-input input[type=password],
 .chat-input input[type=search],
 .chat-input {
-    font-size: 2.4 rem !important;
+    font-size: 2.4rem !important;
 }
 
 .chat-list .tw-full-height.reverse {
@@ -46,16 +46,13 @@ body {
 .chat-line__message.odd {
     background-color:#111 !important;
 }
-.chat-line__message, .chat-line__status, .chat-line__subscribe, .user-notice-line {
+.chat-list .tw-full-height > .chat-line__message, .chat-line__status, .user-notice-line {
     padding:3px 1px 3px 6px !important;
-    font-size:15px !important; // changes font size for the whole page. 
-                               // also, this size was chosen 'cos it looks decent on my 1080p monitor,
-    line-height:18px !important;
+    font-size:32px !important;
+    line-height:35px !important;
     border-bottom:#444 solid 1px !important;
 }
-.chat-line__subscribe span {
-    color: white;
-}
+
 .chat-line__message .chat-card__link {
     background-color: #333 !important;
 }
@@ -63,16 +60,16 @@ body {
     display: inline;
 }
 .chat-line__message .chat-card__link .chat-card__title span {
-    font-size:32px !important;
-    line-height:35px !important;
+    font-size: 32px !important;
+    line-height: 35px !important;
     color: white;
 }
 .chat-line__message .chat-card__link .chat-card__title + div span {
-    font-size:32px !important;
-    line-height:35px !important;
+    font-size: 32px !important;
+    line-height: 35px !important;
     color: #bbb !important;
 }
-.mention-fragment {
+div.mention-fragment {
     background-color: transparent !important;
     padding: 0;
 }
@@ -101,7 +98,7 @@ a {
     color:inherit !important;
 }
 .chat-author__display-name {
-    color:#00B609 !important;
+    color:green !important;
 }
 span[data-a-target='chat-message-text'], img.chat-image {
     color:white !important;
@@ -114,6 +111,37 @@ span[data-a-target='chat-message-text'], img.chat-image {
 .mentioned {
     color: inherit;
     background-color: inherit;
+}
+
+img.chat-line__message--emote {
+    margin:0;
+    vertical-align:baseline;
+}
+
+/* Clean up subscription messages */
+.tw-c-text-alt-2 {
+    display:none;
+}
+p.tw-c-text-link{
+    display:inline;
+}
+.tw-mg-l-05 .tw-block {
+    display:inline !important;
+}
+p.tw-c-text-link, p.tw-mg-l-05{
+    font-size:32px;
+    line-height:35px;
+}
+div.tw-mg-y-05{
+    margin-bottom:0 !important;
+    margin-top:0 !important;
+}
+div.tw-pd-y-05{
+    padding-bottom:0 !important;
+    padding-top:0 !important;
+}
+div.tw-pd-r-2{
+    padding-right:0 !important;
 }
 
 ::-webkit-scrollbar {
